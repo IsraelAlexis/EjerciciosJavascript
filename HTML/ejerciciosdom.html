@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./dom.js"></script>
+</head>
+<!-- <body>
+<p id="demo">
+</p>
+<script>
+document.getElementById("demo").innerHTML="Bienvenidos";
+</script>
+
+</body>
+</html>
+-->
+<body>
+    <header>
+        <h1>Oprime el botón!</h1>
+        <button onclick="colores()">Botón</button>
+    </header>
+    <main>
+        <div id="div1"></div>
+    </main>
+<!--  
+<form name="fdatos">
+Escribe tu nombre: <input type="text" size="10" name="entrada"/>
+<input type="button" value="Pulsa aquí" onclick="saludo()" />
+</form>-->
+
+<form name="fdatos">
+    Introduce número: <input type="text" size="10" name="entrada"/>
+    <b> X </b>
+    <select id="lista" onchange="calcula()">
+    <option value="1" selected>uno</option>
+    <option value="2">dos</option>
+    <option value="3">tres</option>
+    <option value="4">cuatro</option>
+    </select>
+    </form>
+    <div id ="salida"></div>
+
+<!-- se requiere crear un formulario que reciba informacion de toma de reserva de un viaje a paris    -->
+<form name="paris">
+la siguiente es una lista de planes 
+<br>
+ingrese su nombre: <input type="text" size="20" name="nombres"/>
+seleccione los planes: 
+<select id="planes"  >
+    <option value=" "></option>
+    <option value="solo derecho a transporte">solo transporte</option>
+    <option value="todo incluido">todo pago</option>
+    <option value="solo derecho a hotel">solo hotel</option>
+</select>
+ingrese su direccion: <input type="text" size="20" name="entrada"/>
+fecha de vuelo: <input type="date" size="20" name="fecha"onchange="reserva()">
+</form>
+
+<!-- realizar una operacion para escoger una carrera en una universidad, se debe elborar una lista e integrarla con su nombre esta unersidad cuenta con carreras de tipo artistica -->
+<br>
+<br>
+<br>
+
+<form name="univer">
+    Aspirante seleccione una carrera de su gusto
+    <br>
+    <br>
+    ingrese su nombre: <input type="text" size="20" name="nom"/>
+    seleccione las carreras: 
+    <select id="carrera" onchange="universidad()">
+        <option value=" "></option>
+        <option value="Bellas artes">Bellas artes</option>
+        <option value="diseño grafico">Diseño grafico</option>
+        <option value="fotografia">Fotografia</option>
+        <option value="Baile">Baile</option>
+        <option value="modelaje">modelaje</option>
+    </select>
+    </form>
+
+<br>
+<br>
+<!-- utilizacion slide -->
+<h3>Entrada de datos por 'Slide'</h3>
+<input type="range" id="RangoValor" value="50" onchange="ProcesaDatos()">
+<p id="resultado">
+</p>
+
+<br>
+<br>
+<br>
+<!-- utilizacion date -->
+<form>
+    <input type="date" id="start" onchange="getEventTime()">
+    <input type="date" id="end" onchange="getEventTime()">
+</form>
+    
+
+
+
+</body>
+</html>
